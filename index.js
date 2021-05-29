@@ -88,9 +88,8 @@ function addOtherMembers() {
       name: "addOtherMembers",
     })
     .then(function ({ addOtherMembers }) {
-      console.log("add other members", addOtherMembers);
       if (addOtherMembers) {
-        askQuestions();
+        promptQuestions();
       } else {
         renderHTML();
       }
