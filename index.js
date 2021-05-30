@@ -7,6 +7,7 @@ const generateEngineer = renderFile.createEngineer;
 const generateIntern = renderFile.createIntern;
 const renderHTML = renderFile.renderMain;
 
+// array of basic employee questions
 function promptQuestions() {
   inquirer
     .prompt([
@@ -35,6 +36,7 @@ function promptQuestions() {
         choices: ["Engineer", "Intern", "Manager"],
       },
     ])
+    // once the basic employee info is incluided, the prompt switches to a specific category
     .then(function ({ name, id, email, role }) {
       switch (role) {
         case "Engineer":
@@ -80,6 +82,7 @@ function promptQuestions() {
     });
 }
 
+// Once you added an employee, it asks if you'd like to add another employee
 function addOtherMembers() {
   inquirer
     .prompt({
