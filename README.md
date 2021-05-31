@@ -4,6 +4,9 @@
   # Description
 AS A manager <br>I WANT to generate a webpage that displays my team's basic info <br>SO THAT I have quick access to their emails and GitHub profiles
 
+working app video link:
+<br>https://drive.google.com/file/d/1c_8vGuN128h_I6qyKtNJ0iZBk8zj0iRF/view?usp=sharing
+
   # GitHub Links
   Live Page: https://galiciaRogelio.github.io/myTeamProfileGenerator/
   <br>
