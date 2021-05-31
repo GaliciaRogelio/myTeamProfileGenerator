@@ -49,7 +49,7 @@ function promptQuestions() {
             })
             .then(function ({ github }) {
               generateEngineer(name, id, email, github);
-              addOtherMembers();
+              addOtherEmployee();
             });
           break;
         case "Intern":
@@ -62,7 +62,7 @@ function promptQuestions() {
             })
             .then(function ({ school }) {
               generateIntern(name, id, email, school);
-              addOtherMembers();
+              addOtherEmployee();
             });
           break;
         case "Manager":
@@ -75,23 +75,23 @@ function promptQuestions() {
             })
             .then(function ({ officeNumber }) {
               generateManager(name, id, email, officeNumber);
-              addOtherMembers();
+              addOtherEmployee();
             });
           break;
       }
     });
 }
 
-// Once you added an employee, it asks if you'd like to add another employee
-function addOtherMembers() {
+// Once the employee has been added, it will ask if you want to add another
+function addOtherEmployee() {
   inquirer
     .prompt({
       type: "confirm",
       message: "Add other Team Members?",
-      name: "addOtherMembers",
+      name: "addOtherEmployee",
     })
-    .then(function ({ addOtherMembers }) {
-      if (addOtherMembers) {
+    .then(function ({ addOtherEmployee }) {
+      if (addOtherEmployee) {
         promptQuestions();
       } else {
         renderHTML();
