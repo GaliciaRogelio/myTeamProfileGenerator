@@ -8,8 +8,6 @@ working app video link:
 <br>https://drive.google.com/file/d/1c_8vGuN128h_I6qyKtNJ0iZBk8zj0iRF/view?usp=sharing
 
   # GitHub Links
-  Live Page: https://galiciaRogelio.github.io/myTeamProfileGenerator/
-  <br>
   Repository: https://github.com/galiciaRogelio/myTeamProfileGenerator
   
   # Table of Contents 
